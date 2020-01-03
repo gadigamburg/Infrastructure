@@ -1,4 +1,6 @@
 FROM jenkins/jenkins
+EXPOSE 8080/tcp
+EXPOSE 50000/tcp
 USER root
 RUN apt -y update
 RUN apt -y install python3-pip
